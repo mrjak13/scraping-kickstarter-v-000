@@ -10,7 +10,7 @@ def create_project_hash
 
   project = kickstarter.css("li.project.grid_4").first
 
-  titel = project.css("h2.bbcard_name strong a").text
+  title = project.css("h2.bbcard_name strong a").text
 
   binding.pry
 end
