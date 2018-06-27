@@ -8,7 +8,9 @@ def create_project_hash
 
   kickstarter = Nokogiri::HTML(html)
 
-  kickstarter.css("li.project.grid_4").first.css("h2").css("strong").text
+  project = kickstarter.css("li.project.grid_4").first
+
+  titel = project.css("h2.bbcard_name strong a").text
 
   binding.pry
 end
