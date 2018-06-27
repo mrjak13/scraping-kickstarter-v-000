@@ -1,5 +1,6 @@
 # require libraries/modules here
 require 'nokogiri'
+require 'pry'
 
 def create_project_hash
   # write your code here
@@ -7,3 +8,5 @@ def create_project_hash
 
   kickstarter = Nokogiri::HTML(html)
 end
+
+binding.pry
